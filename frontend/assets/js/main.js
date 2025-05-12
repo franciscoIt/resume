@@ -115,3 +115,12 @@
 			});
 
 })(jQuery);
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    el.textContent = translations[lang][key] || `[${key}]`;
+  });
+}
+
+// Puedes cambiar esto por guardar el idioma en localStorage o según navegador
+setLanguage("es"); // o "en"
