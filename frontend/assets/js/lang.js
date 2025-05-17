@@ -1,13 +1,15 @@
 const translations = {
   en: {
-    section_one_title: "Sample heading in English",
-    section_one_text: "This is a sample paragraph in English describing the section content.",
+    greeting: "I am Iván",
+    description: "IT specialist with knowledge of programming, cybersecurity and the cloud",
+    section_one_title: "About me",
+    section_one_text: "Developer with experience in backend computing (Java, Python, PHP) and a cybersecurity specialist. I've worked in development, cybersecurity consulting, and cloud management with Kubernetes and AWS. I'm currently interested in SEO, modern web development, and automation.",
     learn_more: "Learn More",
     recent_work: "Recent Work",
-    work_1_title: "Project One",
-    work_1_desc: "Short description of Project One.",
-    work_2_title: "Project Two",
-    work_2_desc: "Short description of Project Two.",
+    work_1_title: "AI Web Scraper",
+    work_1_desc: "Scrape and extract specific information from any website using local AI-based parsing",
+    work_2_title: "Advance FastAPI CRUD",
+    work_2_desc: "Robust backend application developed with FastAPI. Automatic documentation with OpenAPI.Uses the SQLAlchemy ORM, Alembic for database version control, and Pydantic for data validation. Includes unit and integrated testing with pytest and httpx, and maintains quality standards with pre-commit hooks.",
     work_3_title: "Project Three",
     work_3_desc: "Short description of Project Three.",
     work_4_title: "Project Four",
@@ -19,7 +21,7 @@ const translations = {
     full_portfolio: "Full Portfolio",
     get_in_touch: "Get In Touch",
     contact_text: "Feel free to reach out by filling the form below.",
-    name: "Name",
+    name: "Iván",
     email: "Email",
     message: "Message",
     send_message: "Send Message",
@@ -28,12 +30,15 @@ const translations = {
     phone_label: "Phone",
     phone_text: "123-456-7890",
     email_label: "Email",
-    email_text: "contact@example.com",
+    email_text: "ivnro.dev@gmail.com",
+
   },
 
   es: {
-    section_one_title: "Encabezado de ejemplo en español",
-    section_one_text: "Este es un párrafo de ejemplo en español que describe el contenido de la sección.",
+    greeting: "Soy Iván",
+    description: "Especialista en TI con conocimientos en programación, nube y ciberseguridad",
+    section_one_title: "Sobre mí",
+    section_one_text: " Informatico con experiencia en backend (Java, Python, php) y especialista en ciberseguridad. He trabajado en desarrollo, asesoria de ciberseguridad y gestión en la nube con Kubernetes y AWS. Actualmente me interesa el SEO, el desarrollo web moderno y la automatización.",
     learn_more: "Saber más",
     recent_work: "Trabajos Recientes",
     work_1_title: "Proyecto Uno",
@@ -51,7 +56,7 @@ const translations = {
     full_portfolio: "Portafolio Completo",
     get_in_touch: "Contacto",
     contact_text: "No dudes en contactarme completando el siguiente formulario.",
-    name: "Nombre",
+    name: "Iván",
     email: "Correo electrónico",
     message: "Mensaje",
     send_message: "Enviar Mensaje",
@@ -60,7 +65,9 @@ const translations = {
     phone_label: "Teléfono",
     phone_text: "123-456-7890",
     email_label: "Correo",
-    email_text: "contacto@ejemplo.com",
+    email_text: "ivnro.dev@gmail.com",
+
+    
   },
 };
 
