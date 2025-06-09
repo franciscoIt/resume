@@ -20,7 +20,7 @@ jobs:
 
       - name: Install linters
         run: |
-          npm install -g htmlhint stylelint jshint
+          npm install -g stylelint stylelint-config-standard htmlhint jshint
 
       - name: Lint HTML
         run: htmlhint frontend/
