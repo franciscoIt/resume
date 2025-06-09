@@ -61,37 +61,57 @@
 		  </article>
 		</div>
 	  </section>
-		  
+	</article>
 
-		</article>
-		<!-- 
-		<article class="col-6 col-12-xsmall work-item">
-		  <a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-		  <h3 data-i18n="work_3_title"></h3>
-		  <p data-i18n="work_3_desc"></p>
-		</article>
-		<article class="col-6 col-12-xsmall work-item">
-		  <a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-		  <h3 data-i18n="work_4_title"></h3>
-		  <p data-i18n="work_4_desc"></p>
-		</article>
-		<article class="col-6 col-12-xsmall work-item">
-		  <a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-		  <h3 data-i18n="work_5_title"></h3>
-		  <p data-i18n="work_5_desc"></p>
-		</article>
-		<article class="col-6 col-12-xsmall work-item">
-		  <a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-		  <h3 data-i18n="work_6_title"></h3>
-		  <p data-i18n="work_6_desc"></p>
-		</article>
-	  </div>
-	  <ul class="actions">
-		<li><a href="#" class="button" data-i18n="full_portfolio"></a></li>
-	  </ul>
+	<section id="experience">
+		<h2 data-i18n="experience_title">Experiencia</h2>
+		<div class="experience-container">
+	  
+			<article class="experience-item">
+				<div class="exp-header" onclick="toggleExperience(this)">
+				  <div class="exp-title">
+					<h3 data-i18n="exp_1_title">Desarrollador Backend – Empresa X</h3>
+					<span class="experience-date" data-i18n="exp_1_date">Enero 2023 - Julio 2023</span>
+				  </div>
+				  <div class="arrow"></div>
+				</div>
+				<div class="exp-body">
+				  <p data-i18n="exp_1_desc">Desarrollé APIs REST con FastAPI y PostgreSQL...</p>
+				</div>
+			  </article>
+			  
+			  <article class="experience-item">
+				<div class="exp-header" onclick="toggleExperience(this)">
+				  <div class="exp-title">
+					<h3 data-i18n="exp_2_title">Técnico DevOps – Empresa Y</h3>
+					<span class="experience-date" data-i18n="exp_2_date">Agosto 2023 - Diciembre 2023</span>
+				  </div>
+				  <div class="arrow"></div>
+				</div>
+				<div class="exp-body">
+				  <p data-i18n="exp_2_desc">Mantuve infraestructuras en AWS y automatizaciones con GitHub Actions...</p>
+				</div>
+			  </article>
+			  
+			  <article class="experience-item">
+				<div class="exp-header" onclick="toggleExperience(this)">
+				  <div class="exp-title">
+					<h3 data-i18n="exp_3_title">Consultor de Ciberseguridad – Empresa Z</h3>
+					<span class="experience-date" data-i18n="exp_3_date">Enero 2024 - Actualidad</span>
+				  </div>
+				  <div class="arrow"></div>
+				</div>
+				<div class="exp-body">
+				  <p data-i18n="exp_3_desc">Realicé auditorías de seguridad y pruebas de penetración web con herramientas como Burp Suite y wfuzz...</p>
+				</div>
+			  </article>
+			  
+	  
+		</div>
 	  </section>
-	  -->
-	
+	  
+	  
+	  
   
 	<!-- Three -->
 	<section id="three">
@@ -487,6 +507,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lang.js"></script>
+
+	<script>
+		function toggleExperience(header) {
+		  const allHeaders = document.querySelectorAll(".exp-header");
+		  const allBodies = document.querySelectorAll(".exp-body");
+	  
+		  const body = header.nextElementSibling;
+		  const isOpen = body.classList.contains("open");
+	  
+		  // Cierra todos
+		  allHeaders.forEach(h => h.classList.remove("open"));
+		  allBodies.forEach(b => b.classList.remove("open"));
+	  
+		  // Si no estaba abierto, lo abrimos
+		  if (!isOpen) {
+			header.classList.add("open");
+			body.classList.add("open");
+		  }
+		}
+	  
+		// Abrir la primera experiencia en móviles
+		window.addEventListener("DOMContentLoaded", () => {
+		  if (window.innerWidth <= 768) {
+			const firstHeader = document.querySelector(".exp-header");
+			const firstBody = document.querySelector(".exp-body");
+			if (firstHeader && firstBody) {
+			  firstHeader.classList.add("open");
+			  firstBody.classList.add("open");
+			}
+		  }
+		});
+	  </script>
+	  
+	  
+	  
+	  
 </body>
 
 </html>

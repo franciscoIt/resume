@@ -32,6 +32,19 @@ const translations = {
     email_label: "Email",
     email_text: "",
 
+  experience_title: "Experiencia",
+
+  exp_1_title: "Desarrollador Backend – Empresa X",
+  exp_1_date: "Enero 2023 - Julio 2023",
+  exp_1_desc: "Desarrollé APIs REST con FastAPI y PostgreSQL. Participé en la implementación de autenticación y despliegue con Docker.",
+
+  exp_2_title: "Pentester Junior – Empresa Y",
+  exp_2_date: "Septiembre 2022 - Diciembre 2022",
+  exp_2_desc: "Realicé auditorías de seguridad, pruebas de intrusión y redacté informes técnicos sobre vulnerabilidades.",
+
+  exp_3_title: "Desarrollador PHP – Empresa Z",
+  exp_3_date: "Enero 2022 - Junio 2022",
+  exp_3_desc: "Desarrollé módulos para ERP con Laravel, gestioné lógica de negocio y mantenimiento de bases de datos MySQL."
 
   },
   es: {
@@ -67,6 +80,20 @@ const translations = {
     email_label: "Correo",
     email_text: "",
 
+  experience_title: "Experiencia",
+
+  exp_1_title: "Desarrollador Backend – Empresa X",
+  exp_1_date: "Enero 2023 - Julio 2023",
+  exp_1_desc: "Desarrollé APIs REST con FastAPI y PostgreSQL. Participé en la implementación de autenticación y despliegue con Docker.",
+
+  exp_2_title: "Pentester Junior – Empresa Y",
+  exp_2_date: "Septiembre 2022 - Diciembre 2022",
+  exp_2_desc: "Realicé auditorías de seguridad, pruebas de intrusión y redacté informes técnicos sobre vulnerabilidades.",
+
+  exp_3_title: "Desarrollador PHP – Empresa Z",
+  exp_3_date: "Enero 2022 - Junio 2022",
+  exp_3_desc: "Desarrollé módulos para ERP con Laravel, gestioné lógica de negocio y mantenimiento de bases de datos MySQL."
+    
     
   },
 };
