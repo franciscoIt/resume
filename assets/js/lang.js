@@ -32,19 +32,20 @@ const translations = {
     email_label: "Email",
     email_text: "",
 
-  experience_title: "Experiencia",
+    experience_title: "Experiencia",
 
-  exp_1_title: "Desarrollador Backend – Empresa X",
-  exp_1_date: "Enero 2023 - Julio 2023",
-  exp_1_desc: "Desarrollé APIs REST con FastAPI y PostgreSQL. Participé en la implementación de autenticación y despliegue con Docker.",
+    exp_1_title: "Cloud Cybersecurity Technician – SALASCALA",
+    exp_1_date: "Sep 2024 - Feb 2025",
+    exp_1_desc: "Design and management of AWS infrastructure, including services such as EC2, S3, RDS, IAM, and IAM Identity Center. Container management with Docker and support for Kubernetes orchestration (Fargate). - Infrastructure as Code (IaC) support with Terraform.",
 
-  exp_2_title: "Pentester Junior – Empresa Y",
-  exp_2_date: "Septiembre 2022 - Diciembre 2022",
-  exp_2_desc: "Realicé auditorías de seguridad, pruebas de intrusión y redacté informes técnicos sobre vulnerabilidades.",
+    exp_2_title: "Cybersecurity Specialist Technician – BLACK9",
+    exp_2_date: "Feb 2024 - Jun 2024",
+    exp_2_desc: "Vulnerability analysis. Incident ticketing via TheHive. Configuration of the Wazuh EDR/SIEM. Configuration of the notification module to MISP. Implementation and development of security policies and the strategic security plan.",
 
-  exp_3_title: "Desarrollador PHP – Empresa Z",
-  exp_3_date: "Enero 2022 - Junio 2022",
-  exp_3_desc: "Desarrollé módulos para ERP con Laravel, gestioné lógica de negocio y mantenimiento de bases de datos MySQL."
+    exp_3_title: "Backend Developer – adag Payroll Services GmbH",
+    exp_3_date: "Jul 2023 - Oct 2023",
+    exp_3_desc: "Migration from PHP to Laravel. Improved communication by implementing user notifications (email, SMS, WhatsApp, and Telegram). Buttonless translations through user localization. Secure and integrated database interaction via Eloquent ORM. Service APIs for Flutter app. Unit testing with PHPUnit. Play Store preview design using Figma.",
+
 
   },
   es: {
@@ -80,21 +81,21 @@ const translations = {
     email_label: "Correo",
     email_text: "",
 
-  experience_title: "Experiencia",
+    experience_title: "Experiencia",
 
-  exp_1_title: "Desarrollador Backend – Empresa X",
-  exp_1_date: "Enero 2023 - Julio 2023",
-  exp_1_desc: "Desarrollé APIs REST con FastAPI y PostgreSQL. Participé en la implementación de autenticación y despliegue con Docker.",
+    exp_1_title: "Técnico en ciberseguridad en la nube SALASCALA",
+    exp_1_date: "Sep 2024 - Feb 2025",
+    exp_1_desc: " Diseño y administración de infraestructura en AWS, incluyendo los servicios  EC2, S3, RDS, IAM, IAM identity center.Gestión de contenedores con docker y soporte a la orquestración Kubernetes (Fargate). - Soporte a IaC con Terraform",
 
-  exp_2_title: "Pentester Junior – Empresa Y",
-  exp_2_date: "Septiembre 2022 - Diciembre 2022",
-  exp_2_desc: "Realicé auditorías de seguridad, pruebas de intrusión y redacté informes técnicos sobre vulnerabilidades.",
+    exp_2_title: "Técnico especialista en ciberseguridad – BLACK9",
+    exp_2_date: "Feb 2024 - Jun 2024",
+    exp_2_desc: "Análisis de vulnerabilidades. Ticketing de incidentes via TheHive. Configuración del EDR/SIEM Wazuh. Configuración del módulo de notificación a MISP. Implementación y elaboración de políticas de seguridad, plan director",
 
-  exp_3_title: "Desarrollador PHP – Empresa Z",
-  exp_3_date: "Enero 2022 - Junio 2022",
-  exp_3_desc: "Desarrollé módulos para ERP con Laravel, gestioné lógica de negocio y mantenimiento de bases de datos MySQL."
-    
-    
+    exp_3_title: "Desarrollador backend – adag Payroll Services GmbH",
+    exp_3_date: "Jul 2023 - Oct 2023",
+    exp_3_desc: "Migración de código php a Laravel. Mejora de la comunicación a través de la implementación de notificaciones a usuarios (correo, SMS, Whatsapp y Telegram). Traducción sin botones a través de localización del usuario. Interacción a bbdd segura e integra a través del ORM eloquent. API's de servicio a app flutter. Test unitarios con PHPUnit. Diseño de la vista previa de Play Store con figma."
+
+
   },
 };
 
@@ -113,9 +114,9 @@ let lang;
 if (userLang.startsWith("es")) {
   lang = "es";
 } else if (userLang) {
-  lang = "en"; 
+  lang = "en";
 } else {
-  lang = "es"; 
+  lang = "es";
 }
 
 setLanguage(lang);
