@@ -5,7 +5,7 @@ const translations = {
     section_one_title: "About me",
     section_one_text: "Developer with backend experience (Java, Python, php) and technical and practical training in cybersecurity. I have worked in software development, cybersecurity consulting and management in the AWS cloud.",
     learn_more: "Learn More",
-    recent_work: "Recent Work",
+    recent_work: "Recent Projects",
     work_1_title: "AI Web Scraper",
     work_1_desc: "Scrape and extract specific information from any website using local AI-based parsing",
     work_2_title: "Advance FastAPI CRUD",
@@ -36,15 +36,34 @@ const translations = {
 
     exp_1_title: "Cloud Cybersecurity Technician – SALASCALA",
     exp_1_date: "Sep 2024 - Feb 2025",
-    exp_1_desc: "Design and management of AWS infrastructure, including services such as EC2, S3, RDS, IAM, and IAM Identity Center. Container management with Docker and support for Kubernetes orchestration (Fargate). - Infrastructure as Code (IaC) support with Terraform.",
+    exp_1_desc: `<ul>
+  <li>Design and management of AWS infrastructure, including services such as EC2, S3, RDS, IAM, and IAM Identity Center.</li>
+  <li>Container management with Docker and support for Kubernetes orchestration (Fargate).</li>
+  <li>Infrastructure as Code (IaC) support with Terraform.</li>
+</ul>`,
 
     exp_2_title: "Cybersecurity Specialist Technician – BLACK9",
     exp_2_date: "Feb 2024 - Jun 2024",
-    exp_2_desc: "Vulnerability analysis. Incident ticketing via TheHive. Configuration of the Wazuh EDR/SIEM. Configuration of the notification module to MISP. Implementation and development of security policies and the strategic security plan.",
+    exp_2_desc: `<ul>
+  <li>Vulnerability analysis.</li>
+  <li>Incident ticketing via TheHive.</li>
+  <li>Configuration of the Wazuh EDR/SIEM.</li>
+  <li>Configuration of the notification module to MISP.</li>
+  <li>Implementation and development of security policies and the strategic security plan.</li>
+</ul>`,
 
     exp_3_title: "Backend Developer – adag Payroll Services GmbH",
     exp_3_date: "Jul 2023 - Oct 2023",
-    exp_3_desc: "Migration from PHP to Laravel. Improved communication by implementing user notifications (email, SMS, WhatsApp, and Telegram). Buttonless translations through user localization. Secure and integrated database interaction via Eloquent ORM. Service APIs for Flutter app. Unit testing with PHPUnit. Play Store preview design using Figma.",
+    exp_3_desc: `<ul>
+    <li>Migration from PHP to Laravel.</li>
+    <li>Improved communication by implementing user notifications (email, SMS, WhatsApp, and Telegram).</li>
+    <li>Buttonless translations through user localization.</li>
+    <li>Secure and integrated database interaction via Eloquent ORM.</li>
+    <li>Service APIs for Flutter app.</li>
+    <li>Unit testing with PHPUnit.</li>
+    <li>Play Store preview design using Figma.</li>
+  </ul>`,
+  
 
 
   },
@@ -54,7 +73,7 @@ const translations = {
     section_one_title: "Sobre mí",
     section_one_text: "Desarrollador con experiencia en backend (Java, Python, php) y formación técnica y práctica en ciberseguridad. He trabajado en desarrollo, asesoria de ciberseguridad y gestión en la nube AWS.",
     learn_more: "Saber más",
-    recent_work: "Trabajos Recientes",
+    recent_work: "Proyectos Recientes",
     work_1_title: "Web Scraper con IA",
     work_1_desc: "Extractor de información web mediante una IA local.",
     work_2_title: "Back end FastAPI",
@@ -85,15 +104,34 @@ const translations = {
 
     exp_1_title: "Técnico en ciberseguridad en la nube SALASCALA",
     exp_1_date: "Sep 2024 - Feb 2025",
-    exp_1_desc: " Diseño y administración de infraestructura en AWS, incluyendo los servicios  EC2, S3, RDS, IAM, IAM identity center.Gestión de contenedores con docker y soporte a la orquestración Kubernetes (Fargate). - Soporte a IaC con Terraform",
+    exp_1_desc: `<ul>
+  <li>Diseño y administración de infraestructura en AWS, incluyendo los servicios EC2, S3, RDS, IAM, IAM Identity Center.</li>
+  <li>Gestión de contenedores con Docker y soporte a la orquestación Kubernetes (Fargate).</li>
+  <li>Soporte a Infraestructura como Código (IaC) con Terraform.</li>
+</ul>`,
 
     exp_2_title: "Técnico especialista en ciberseguridad – BLACK9",
     exp_2_date: "Feb 2024 - Jun 2024",
-    exp_2_desc: "Análisis de vulnerabilidades. Ticketing de incidentes via TheHive. Configuración del EDR/SIEM Wazuh. Configuración del módulo de notificación a MISP. Implementación y elaboración de políticas de seguridad, plan director",
+    exp_2_desc: `<ul>
+  <li>Análisis de vulnerabilidades.</li>
+  <li>Ticketing de incidentes vía TheHive.</li>
+  <li>Configuración del EDR/SIEM Wazuh.</li>
+  <li>Configuración del módulo de notificación a MISP.</li>
+  <li>Implementación y elaboración de políticas de seguridad y del plan director.</li>
+</ul>`,
 
     exp_3_title: "Desarrollador backend – adag Payroll Services GmbH",
     exp_3_date: "Jul 2023 - Oct 2023",
-    exp_3_desc: "Migración de código php a Laravel. Mejora de la comunicación a través de la implementación de notificaciones a usuarios (correo, SMS, Whatsapp y Telegram). Traducción sin botones a través de localización del usuario. Interacción a bbdd segura e integra a través del ORM eloquent. API's de servicio a app flutter. Test unitarios con PHPUnit. Diseño de la vista previa de Play Store con figma."
+    exp_3_desc: `<ul>
+  <li>Migración de código PHP a Laravel.</li>
+  <li>Mejora de la comunicación a través de la implementación de notificaciones a usuarios (correo, SMS, WhatsApp y Telegram).</li>
+  <li>Traducción sin botones mediante localización del usuario.</li>
+  <li>Interacción a base de datos segura e íntegra mediante el ORM Eloquent.</li>
+  <li>APIs de servicio para la app Flutter.</li>
+  <li>Tests unitarios con PHPUnit.</li>
+  <li>Diseño de la vista previa de Play Store con Figma.</li>
+</ul>
+`
 
 
   },
@@ -103,9 +141,10 @@ const translations = {
 function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    el.textContent = translations[lang][key] || `[${key}]`;
+    el.innerHTML = translations[lang][key] || `[${key}]`;
   });
 }
+
 
 const userLang = navigator.language || navigator.userLanguage;
 let lang;
