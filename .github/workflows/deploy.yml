@@ -24,7 +24,7 @@ jobs:
           npm install -g stylelint stylelint-config-standard htmlhint jshint
 
       - name: Lint HTML
-        run: htmlhint 
+        run: htmlhint index.html
 
       - name: Lint CSS
         run: stylelint "assets/css/**/*.css" --fix || true

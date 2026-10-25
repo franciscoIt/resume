@@ -262,7 +262,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #666666;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -286,7 +286,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
+		color: #4d4d4d;
 		font-weight: 400;
 	}
 
@@ -299,7 +299,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #4d4d4d;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1965,7 +1965,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #787878;
+		color: #4d4d4d;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
@@ -2019,7 +2019,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #787878;
+			color: #4d4d4d;
 			background: #fff;
 		}
 
@@ -2059,7 +2059,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #666666;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2102,8 +2102,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #787878;
-			border-color: #787878;
+			background: #4d4d4d;
+			border-color: #4d4d4d;
 			color: #fff;
 			content: '\f00c';
 		}
@@ -2552,7 +2552,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #787878;
+			color: #4d4d4d;
 			font-size: 0.9em;
 			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2610,7 +2610,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #4d4d4d !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;

@@ -25,6 +25,9 @@ const translations = {
     email: "Email",
     message: "Message",
     send_message: "Send Message",
+    form_name: "Name",
+    form_success: "Thanks for getting in touch!",
+    form_error: "Sorry, the message could not be sent. Please try again later or email me directly.",
     address_label: "Address",
     address_text: "1234 Example St. City, Country",
     phone_label: "Phone",
@@ -130,6 +133,9 @@ const translations = {
     email: "Correo electrónico",
     message: "Mensaje",
     send_message: "Enviar Mensaje",
+    form_name: "Nombre",
+    form_success: "¡Gracias por ponerte en contacto conmigo!",
+    form_error: "No se pudo enviar el mensaje. Inténtalo más tarde o escríbeme directamente por correo.",
     address_label: "Dirección",
     address_text: "1234 Calle Ejemplo. Ciudad, País",
     phone_label: "Teléfono",
@@ -216,6 +222,13 @@ function setLanguage(lang) {
     const key = el.getAttribute("data-i18n");
     el.innerHTML = translations[lang][key] || `[${key}]`;
   });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    el.placeholder = translations[lang][el.getAttribute("data-i18n-placeholder")];
+  });
+  document.querySelectorAll("[data-i18n-value]").forEach(el => {
+    el.value = translations[lang][el.getAttribute("data-i18n-value")];
+  });
+  document.documentElement.lang = lang;
 }
 
 

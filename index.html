@@ -4,12 +4,20 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 
 <head>
-	<title>Ivnro.dev</title>
+	<title>Iván Ramírez – Cloud Security Analyst</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Iván Ramírez – Cloud Security Analyst and cloud technician. AWS/GCP, incident response, Terraform, n8n and DevOps." />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Iván Ramírez – Cloud Security Analyst" />
+	<meta property="og:description" content="Cloud security, incident response and DevOps on AWS/GCP." />
+	<meta property="og:url" content="https://franciscoit.github.io/resume/" />
+	<meta property="og:image" content="https://franciscoit.github.io/resume/images/avatar_ghibli_v2.jpg" />
+	<meta name="twitter:card" content="summary" />
+	<link rel="icon" type="image/jpeg" href="images/avatar_ghibli_v2.jpg" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 
@@ -19,7 +27,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/avatar_ghibli_v2.jpg" alt="" /></a>
+			<a href="#" class="image avatar"><img src="images/avatar_ghibli_v2.jpg" alt="Illustrated portrait of Iván Ramírez" /></a>
 			<strong>
 				<h1 data-i18n="greeting"></h1>
 			</strong>
@@ -66,7 +74,6 @@
 				</article>
 			</div>
 		</section>
-		</article>
 
 		<section id="experience">
 			<h2 data-i18n="experience_title"></h2>
@@ -203,18 +210,18 @@
 					<form id="contact-form">
 						<div class="row gtr-uniform gtr-50">
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="name" id="name" placeholder="Name" required />
+								<input type="text" name="name" id="name" placeholder="Name" data-i18n-placeholder="form_name" required />
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="email" name="email" id="email" placeholder="Email" required />
+								<input type="email" name="email" id="email" placeholder="Email" data-i18n-placeholder="email" required />
 							</div>
 							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message" rows="4"
+								<textarea name="message" id="message" placeholder="Message" data-i18n-placeholder="message" rows="4"
 									required></textarea>
 							</div>
 						</div>
 						<ul class="actions">
-							<li><input type="submit" id="submit-btn" value="Send Message" /></li>
+							<li><input type="submit" id="submit-btn" value="Send Message" data-i18n-value="send_message" /></li>
 						</ul>
 						<p id="form-message" style="color: green; font-weight: bold;"></p>
 					</form>
@@ -227,11 +234,11 @@
 					<ul class="icons">
 						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 						<li><a href="https://github.com/franciscoIt/" class="icon brands fa-github"><span
-									class="label">Github</span></a></li>
-						<li><a href="" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<!--<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+									class="label">GitHub</span></a></li>
 						<li><a href="https://www.linkedin.com/in/ivnro" class="icon brands fa-linkedin"><span
-									class="label">Phone</span></a></li>
+									class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:ivnro.dev@gmail.com" class="icon solid fa-envelope"><span
+									class="label">Email</span></a></li>
 
 					</ul>
 
@@ -310,17 +317,18 @@
 			  
 					if (response.ok) {
 					  form.reset();
-					  messageBox.textContent = "Gracias por ponerte en contacto conmigo.";
+					  messageBox.textContent = translations[lang].form_success;
 					  messageBox.style.color = "green";
 					} else {
-					  const errorText = await response.text();
-					  messageBox.textContent = `Error del servidor: ${errorText}`; // Detalle durante desarrollo
+					  console.error("Server error:", await response.text());
+					  messageBox.textContent = translations[lang].form_error;
 					  messageBox.style.color = "red";
 					  submitBtn.disabled = false;
 					  return;
 					}
 				  } catch (error) {
-					messageBox.textContent = `Error de red: ${error.message}`; // Detalle durante desarrollo
+					console.error("Network error:", error);
+					messageBox.textContent = translations[lang].form_error;
 					messageBox.style.color = "red";
 					submitBtn.disabled = false;
 					return;
