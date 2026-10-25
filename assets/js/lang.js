@@ -1,9 +1,9 @@
 const translations = {
   en: {
     greeting: "I am Iván",
-    description: "IT specialist with knowledge of programming, cybersecurity and the cloud",
+    description: "Cloud Security Analyst | Cloud technician",
     section_one_title: "About me",
-    section_one_text: "Developer with backend experience (Java, Python, php) and technical and practical training in cybersecurity. I have worked in software development, cybersecurity consulting and management in the AWS cloud.",
+    section_one_text: "Cyber Security Analyst with experience on AWS/GCP clouds, incident response and DevOps technologies (n8n, Terraform, GitHub Actions and AI agents). Background in backend development (Java, Python, PHP).<br/>English B2 | German A1 | Spanish Native",
     learn_more: "Learn More",
     recent_work: "Recent Projects",
     work_1_title: "AI Web Scraper",
@@ -32,46 +32,83 @@ const translations = {
     email_label: "Email",
     email_text: "",
 
-    experience_title: "Experiencia",
+    experience_title: "Experience",
 
-    exp_1_title: "Cloud Cybersecurity Technician – SALASCALA",
-    exp_1_date: "Sep 2024 - Feb 2025",
+    exp_1_title: "Cloud Security Analyst – Zoi",
+    exp_1_date: "Sep 2025 - Nov 2026",
     exp_1_desc: `<ul>
-  <li>Design and management of AWS infrastructure, including services such as EC2, S3, RDS, IAM, and IAM Identity Center.</li>
-  <li>Container management with Docker and support for Kubernetes orchestration (Fargate).</li>
+  <li>Response to security incidents from firewalls, EDR and continuous exposure tools.</li>
+  <li>Malware, suspicious URLs and malicious traffic analysis.</li>
+  <li>Privileged access management (PAM) in AWS within a Control Tower landing zone.</li>
+  <li>Alert routing with n8n, handling exceptions and cutting manual triage time.</li>
+  <li>Lifecycle and renewal management of 25+ TLS certificates.</li>
+</ul>`,
+
+    exp_2_title: "Software Engineer - GWS Administrator – Zoi",
+    exp_2_date: "Sep 2025 - Jun 2026",
+    exp_2_desc: `<ul>
+  <li>Integrations with GCP (BigQuery and Cloud Run) in Apps Script, automating end-user accounting reporting.</li>
+  <li>Google Admin policy administration for a 150+ user organization.</li>
+</ul>`,
+
+    exp_3_title: "Cloud Technician – Sala Scala",
+    exp_3_date: "Sep 2024 - Feb 2025",
+    exp_3_desc: `<ul>
+  <li>Design and administration of AWS infrastructure (EC2, S3, RDS, IAM).</li>
+  <li>Privileged access management (PAM) with IAM Identity Center.</li>
+  <li>Container management on Docker and ECS/EKS on Fargate.</li>
   <li>Infrastructure as Code (IaC) support with Terraform.</li>
 </ul>`,
 
-    exp_2_title: "Cybersecurity Specialist Technician – BLACK9",
-    exp_2_date: "Feb 2024 - Jun 2024",
-    exp_2_desc: `<ul>
-  <li>Vulnerability analysis.</li>
-  <li>Incident ticketing via TheHive.</li>
+    exp_4_title: "Internship - Cybersecurity Technician – Black9",
+    exp_4_date: "Mar 2024 - Jun 2024",
+    exp_4_desc: `<ul>
+  <li>Internal and web pentesting (Burp Suite, Nessus, Active Directory).</li>
   <li>Configuration of the Wazuh EDR/SIEM.</li>
-  <li>Configuration of the notification module to MISP.</li>
-  <li>Implementation and development of security policies and the strategic security plan.</li>
+  <li>Incident ticketing via TheHive and notification module to MISP.</li>
 </ul>`,
 
-    exp_3_title: "Backend Developer – adag Payroll Services GmbH",
-    exp_3_date: "Jul 2023 - Oct 2023",
-    exp_3_desc: `<ul>
-    <li>Migration from PHP to Laravel.</li>
-    <li>Improved communication by implementing user notifications (email, SMS, WhatsApp, and Telegram).</li>
-    <li>Buttonless translations through user localization.</li>
-    <li>Secure and integrated database interaction via Eloquent ORM.</li>
-    <li>Service APIs for Flutter app.</li>
-    <li>Unit testing with PHPUnit.</li>
-    <li>Play Store preview design using Figma.</li>
-  </ul>`,
-  
+    exp_5_title: "Internship - Backend Developer – adag Payroll Services GmbH (Berlin)",
+    exp_5_date: "Jul 2023 - Oct 2023",
+    exp_5_desc: `<ul>
+  <li>Integration of user notification systems across 3 channels (email, SMS, WhatsApp) with Laravel/PHP.</li>
+  <li>Docker container management using Docker Compose.</li>
+  <li>Secure database interaction via Eloquent ORM and unit testing with PHPUnit.</li>
+</ul>`,
+
+    exp_6_title: "Internship - Spring Boot Software Developer – E-Turia (Tenerife)",
+    exp_6_date: "Mar 2023 - May 2023",
+    exp_6_desc: `<ul>
+  <li>Built REST services with Spring Boot following a layered/MVC architecture.</li>
+  <li>Good practices on null safety, readability and functional programming.</li>
+</ul>`,
+
+    certifications_title: "Certifications",
+    certifications_list: `<ul>
+  <li>Claude Certified Architect Foundations (Partner) – Jun 2026</li>
+  <li>HashiCorp Certified: Terraform Associate 004 – Jun 2026</li>
+  <li>Google Cloud Associate Cloud Engineer – May 2026</li>
+  <li>Associate Google Workspace Administrator – Oct 2025</li>
+</ul>`,
+
+    education_title: "Education",
+
+    edu_1_title: "Cybersecurity Master (VET) – IES El Rincón, Las Palmas GC",
+    edu_1_date: "Oct 2023 - Jun 2024",
+    edu_1_desc: "Secure software development, computer forensics, ethical hacking, cybersecurity regulations, network and system hardening.",
+
+    edu_2_title: "Cross-Platform Software Development – IES El Rincón, Las Palmas GC",
+    edu_2_date: "Sep 2021 - Jun 2023",
+    edu_2_desc: "SQL, concurrency, UI, data structures, mobile software development.",
+
 
 
   },
   es: {
     greeting: "Soy Iván",
-    description: "Especialista en TI con conocimientos en programación, nube y ciberseguridad",
+    description: "Analista de Seguridad Cloud | Técnico Cloud",
     section_one_title: "Sobre mí",
-    section_one_text: "Desarrollador con experiencia en backend (Java, Python, php) y formación técnica y práctica en ciberseguridad. He trabajado en desarrollo, asesoria de ciberseguridad y gestión en la nube AWS.",
+    section_one_text: "Analista de ciberseguridad con experiencia en las nubes AWS/GCP, respuesta a incidentes y tecnologías DevOps (n8n, Terraform, GitHub Actions y agentes de IA). Formación en desarrollo backend (Java, Python, PHP).<br/>Inglés B2 | Alemán A1 | Español nativo",
     learn_more: "Saber más",
     recent_work: "Proyectos Recientes",
     work_1_title: "Web Scraper con IA",
@@ -102,36 +139,72 @@ const translations = {
 
     experience_title: "Experiencia",
 
-    exp_1_title: "Técnico en ciberseguridad en la nube SALASCALA",
-    exp_1_date: "Sep 2024 - Feb 2025",
+    exp_1_title: "Analista de Seguridad Cloud – Zoi",
+    exp_1_date: "Sep 2025 - Nov 2026",
     exp_1_desc: `<ul>
-  <li>Diseño y administración de infraestructura en AWS, incluyendo los servicios EC2, S3, RDS, IAM, IAM Identity Center.</li>
-  <li>Gestión de contenedores con Docker y soporte a la orquestación Kubernetes (Fargate).</li>
+  <li>Respuesta a incidentes de seguridad procedentes de firewalls, EDR y herramientas de exposición continua.</li>
+  <li>Análisis de malware, URLs sospechosas y tráfico malicioso.</li>
+  <li>Gestión de accesos privilegiados (PAM) en AWS dentro de una landing zone de Control Tower.</li>
+  <li>Enrutado de alertas con n8n, gestión de excepciones y reducción del tiempo de triaje manual.</li>
+  <li>Gestión del ciclo de vida y renovación de más de 25 certificados TLS.</li>
+</ul>`,
+
+    exp_2_title: "Ingeniero de Software - Administrador GWS – Zoi",
+    exp_2_date: "Sep 2025 - Jun 2026",
+    exp_2_desc: `<ul>
+  <li>Integraciones con GCP (BigQuery y Cloud Run) en Apps Script, automatizando informes contables de usuario final.</li>
+  <li>Administración de políticas de Google Admin para una organización de más de 150 usuarios.</li>
+</ul>`,
+
+    exp_3_title: "Técnico Cloud – Sala Scala",
+    exp_3_date: "Sep 2024 - Feb 2025",
+    exp_3_desc: `<ul>
+  <li>Diseño y administración de infraestructura en AWS (EC2, S3, RDS, IAM).</li>
+  <li>Gestión de accesos privilegiados (PAM) con IAM Identity Center.</li>
+  <li>Gestión de contenedores con Docker y ECS/EKS sobre Fargate.</li>
   <li>Soporte a Infraestructura como Código (IaC) con Terraform.</li>
 </ul>`,
 
-    exp_2_title: "Técnico especialista en ciberseguridad – BLACK9",
-    exp_2_date: "Feb 2024 - Jun 2024",
-    exp_2_desc: `<ul>
-  <li>Análisis de vulnerabilidades.</li>
-  <li>Ticketing de incidentes vía TheHive.</li>
+    exp_4_title: "Prácticas - Técnico de Ciberseguridad – Black9",
+    exp_4_date: "Mar 2024 - Jun 2024",
+    exp_4_desc: `<ul>
+  <li>Pentesting interno y web (Burp Suite, Nessus, Active Directory).</li>
   <li>Configuración del EDR/SIEM Wazuh.</li>
-  <li>Configuración del módulo de notificación a MISP.</li>
-  <li>Implementación y elaboración de políticas de seguridad y del plan director.</li>
+  <li>Ticketing de incidentes vía TheHive y módulo de notificación a MISP.</li>
 </ul>`,
 
-    exp_3_title: "Desarrollador backend – adag Payroll Services GmbH",
-    exp_3_date: "Jul 2023 - Oct 2023",
-    exp_3_desc: `<ul>
-  <li>Migración de código PHP a Laravel.</li>
-  <li>Mejora de la comunicación a través de la implementación de notificaciones a usuarios (correo, SMS, WhatsApp y Telegram).</li>
-  <li>Traducción sin botones mediante localización del usuario.</li>
-  <li>Interacción a base de datos segura e íntegra mediante el ORM Eloquent.</li>
-  <li>APIs de servicio para la app Flutter.</li>
-  <li>Tests unitarios con PHPUnit.</li>
-  <li>Diseño de la vista previa de Play Store con Figma.</li>
-</ul>
-`
+    exp_5_title: "Prácticas - Desarrollador Backend – adag Payroll Services GmbH (Berlín)",
+    exp_5_date: "Jul 2023 - Oct 2023",
+    exp_5_desc: `<ul>
+  <li>Integración de sistemas de notificación a usuarios en 3 canales (correo, SMS, WhatsApp) con Laravel/PHP.</li>
+  <li>Gestión de contenedores Docker mediante Docker Compose.</li>
+  <li>Interacción segura con la base de datos mediante el ORM Eloquent y tests unitarios con PHPUnit.</li>
+</ul>`,
+
+    exp_6_title: "Prácticas - Desarrollador Spring Boot – E-Turia (Tenerife)",
+    exp_6_date: "Mar 2023 - May 2023",
+    exp_6_desc: `<ul>
+  <li>Desarrollo de servicios REST con Spring Boot siguiendo una arquitectura por capas/MVC.</li>
+  <li>Buenas prácticas de null safety, legibilidad y programación funcional.</li>
+</ul>`,
+
+    certifications_title: "Certificaciones",
+    certifications_list: `<ul>
+  <li>Claude Certified Architect Foundations (Partner) – Jun 2026</li>
+  <li>HashiCorp Certified: Terraform Associate 004 – Jun 2026</li>
+  <li>Google Cloud Associate Cloud Engineer – May 2026</li>
+  <li>Associate Google Workspace Administrator – Oct 2025</li>
+</ul>`,
+
+    education_title: "Formación",
+
+    edu_1_title: "Máster FP en Ciberseguridad – IES El Rincón, Las Palmas GC",
+    edu_1_date: "Oct 2023 - Jun 2024",
+    edu_1_desc: "Desarrollo de software seguro, análisis forense informático, hacking ético, normativa de ciberseguridad, bastionado de redes y sistemas.",
+
+    edu_2_title: "Desarrollo de Aplicaciones Multiplataforma – IES El Rincón, Las Palmas GC",
+    edu_2_date: "Sep 2021 - Jun 2023",
+    edu_2_desc: "SQL, concurrencia, interfaces, estructuras de datos, desarrollo de software móvil.",
 
 
   },
